@@ -14,6 +14,7 @@ function loginSubmit(event) {
 }
 
 function paintGreetings(username){
+    //const username = localStorage.getItem(USER) 인수를 받지 않고, 여기서만 찾는 형식으로도 가능하지만, localStorage를 두 번 열어봐야함
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME); 
 }
