@@ -1,0 +1,114 @@
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin : 0 auto;
+}
+.outer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column; //수직 방향으로 정렬 방향 정함
+    // justify-content: center; 
+    // align-items: center; 
+    color: white;
+    #weather{
+        justify-self: end;
+        margin-right: 3vh;
+        text-align: end;
+    }
+
+    display: flex;
+    color: white;
+    .inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; //메인축 방향 정렬(수직이므로 세로 정렬)
+        flex: auto;
+        flex-basis: auto;
+        align-content: center; //수직축 방향 정렬(수직이므로 가로 정렬)
+        margin: auto;
+    }
+    
+
+    .quote-box{
+        justify-self: flex-end;
+        margin-bottom: 3vh;
+    }
+}
+
+
+
+// html,
+// .outer{
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     margin: 0 auto;
+//     justify-content: center;
+//     flex-direction: column;
+//     align-items: center;
+//     .weather{
+//         align-self: flex-end;
+//     }
+//     .main {
+//         width: 50vh;
+//         height: 50vh;
+//         display: flex;
+//         flex-direction: column;
+//         // justify-items: center;
+//         // align-items: center;
+//         // align-self: center;
+//         color: white;
+//         .inner{
+//             flex: auto;
+//             flex-basis: auto;
+//             align-content: center;
+//             margin: auto;
+//         }
+//         .quote-box{
+//             align-self: flex-end;
+//         }
+    
+//     }
+// }
+
+
+
+#quote {
+    text-align: center;
+    color: white;
+    bottom: auto;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+
+
